@@ -20,7 +20,7 @@
 ##############################################################################
 {
     "name": "Management System - Action",
-    "version": "1.2",
+    "version": "8.0.1.2.0",
     "author": "Savoir-faire Linux,Odoo Community Association (OCA)",
     "website": "http://www.savoirfairelinux.com",
     "license": "AGPL-3",
@@ -35,11 +35,14 @@ system:
 """,
     "depends": ['mgmtsystem', 'crm_claim'],
     "data": [
+        'data/mgmtsystem_action_stage.xml',
         'security/ir.model.access.csv',
         'security/mgmtsystem_action_security.xml',
         'action_sequence.xml',
         'workflow_mgmtsystem_action.xml',
+        'views/menus.xml',
         'mgmtsystem_action.xml',
+        'views/mgmtsystem_action_stage.xml',
         'board_mgmtsystem_action.xml',
     ],
     "demo": ['demo_action.xml'],
